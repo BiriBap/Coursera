@@ -1,0 +1,103 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+
+}
+h1 {
+  margin-bottom: 30px;
+  font-family: Helvetica;
+  text-align: center;
+}
+
+#boxtitle1 {
+  border: 1px solid black;
+  background-color: pink;
+  font-family: Helvetica;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 100px;
+}
+
+#boxtitle2 {
+  border: 1px solid black;
+  background-color: red;
+  font-family: Helvetica;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 100px;
+}
+
+#boxtitle3 {
+  border: 1px solid black;
+  background-color: yellow;
+  font-family: Helvetica;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 100px;
+}
+
+#content {
+  padding: 0;
+  background-color: gray;
+  border: 1px solid black;
+  width: 100%;
+  position: relative;
+  height: auto;
+  margin: 15px auto;
+}
+
+#content div:nth-child(2) {
+  position: relative;
+  padding: 50px 10px 10px;
+  display: flex;
+}
+
+.col-lg-6, .col-lg-12, .col-md-12 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Simple Responsive Framework. */
+/********** MOBILE VIEW **********/
+.row {
+  width: 100%;
+  float: left;
+}
+
+/********** TABLET VIEW **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-lg-6, .col-lg-12, .col-md-12 {
+    float: left;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** DESKTOP VIEW **********/
+@media (min-width: 992px) {
+  .col-lg-6, .col-lg-12, .col-md-12 {
+    float: left;
+  }
+  .col-lg-6, .col-lg-12, .col-md-12 {
+    width: 33.33%;
+  }
+}
