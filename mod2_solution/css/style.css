@@ -70,6 +70,7 @@ h1 {
 .col-lg-6, .col-lg-12, .col-md-12 {
   padding-left: 15px;
   padding-right: 15px;
+  float: left;
 }
 
 /* Simple Responsive Framework. */
@@ -81,9 +82,6 @@ h1 {
 
 /********** TABLET VIEW **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  .col-lg-6, .col-lg-12, .col-md-12 {
-    float: left;
-  }
   .col-lg-6 {
     width: 50%;
   }
@@ -94,9 +92,6 @@ h1 {
 
 /********** DESKTOP VIEW **********/
 @media (min-width: 992px) {
-  .col-lg-6, .col-lg-12, .col-md-12 {
-    float: left;
-  }
   .col-lg-6, .col-lg-12, .col-md-12 {
     width: 33.33%;
   }
