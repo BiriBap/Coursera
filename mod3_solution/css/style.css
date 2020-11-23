@@ -5,11 +5,14 @@
   border: 0;
 }
 
+.navbar-default {
+    height: 80px;
+}
+
 .navbar-brand {
   padding-top: 25px;
-  height: 80px;
-  
 }
+
 .navbar-brand h1 { /* Restaurant name */
   font-family: serif;
   color: #000000;
@@ -87,7 +90,6 @@ button.navbar-toggle {
 
   .navbar-brand h1 { /* Restaurant name */
     margin-left: -5px;
-
   }
 
   #collapsable-nav a { /* Collapsed nav menu text */
@@ -97,15 +99,5 @@ button.navbar-toggle {
     font-size: 1em;
     margin-right: 5px;
   }
-
-}
-
-
-/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
-@media (max-width: 479px) {
-  /* Header */
-
-  /* End Header */
-  
 
 }
