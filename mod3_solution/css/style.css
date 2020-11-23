@@ -5,12 +5,9 @@
   border: 0;
 }
 
-.navbar-default {
-    height: 80px;
-}
-
 .navbar-brand {
   padding-top: 25px;
+  margin-bottom: 20px;
 }
 
 .navbar-brand h1 { /* Restaurant name */
@@ -19,17 +16,26 @@
   text-transform: uppercase;
   font-weight: bold;
   margin-top: 0;
-  margin-bottom: 0;
   margin-left: 10px;
   line-height: .75;
 }
 
-h1 {
-  text-align: center;
+button.navbar-toggle {
+  margin-top: 20px;
 }
 
 #nav-list {
-  margin-top: 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+  background-color: #aaa9ad;
+}
+
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
 }
 
 #Chicken, #Beef, #Sushi {
@@ -44,12 +50,8 @@ h1 {
 
 }
 
-button.navbar-toggle, .icon-bar {
-  border: 1px solid #61122f;
-}
-button.navbar-toggle {
-  clear: both;
-  margin-top: -30px;
+h1 {
+  text-align: center;
 }
 
 #Chicken h3, #Beef h3, #Sushi h3 {
@@ -57,29 +59,36 @@ button.navbar-toggle {
   font-weight: bold;
 }
 
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
-}
-.navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -30px;
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .navbar-brand h1{
+  margin-left: 25px;
+  }
 }
 
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  .navbar-brand h1{
+  margin-left: 25px;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-brand h1{
+  margin-left: 25px;
+  }
+
+  .col-sm-12 {
+  margin-top: 10px;
+  }
+}
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
-  /* Header */
-
-  .navbar-brand h1 { /* Restaurant name */
-    margin-left: -5px;
+  .col-xs-12 {
+  margin-bottom: 10px;
   }
-
-  #collapsable-nav a { /* Collapsed nav menu text */
-    font-size: 1.2em;
-  }
-  #collapsable-nav a span { /* Collapsed nav menu glyph */
-    font-size: 1em;
-    margin-right: 5px;
-  }
-
 }
